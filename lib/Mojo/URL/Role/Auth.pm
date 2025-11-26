@@ -1,8 +1,6 @@
 package Mojo::URL::Role::Auth;
 
-use strict;
-use warnings;
-use Mojo::Base -role;
+use Mojo::Base -role, -signatures;
 has [qw(username password)];
 
 our $VERSION = '0.1.0';
