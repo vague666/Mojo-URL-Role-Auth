@@ -1,7 +1,7 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Use 2-arg function to add userinfo to url",
    "author" : [
-      "vague666 <>"
+      "vague <vague@cpan.org>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v3.1.28, CPAN::Meta::Converter version 2.150010",
@@ -47,12 +47,25 @@
       },
       "test" : {
          "requires" : {
+            "Mojolicious" : "9.11",
+            "Role::Tiny" : "v2.0.1",
             "Test::More" : "0.98"
          }
       }
    },
    "release_status" : "unstable",
-   "version" : "0.01",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/vague666/Mojo-URL-Role-Auth/issues"
+      },
+      "homepage" : "https://github.com/vague666/Mojo-URL-Role-Auth",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/vague666/Mojo-URL-Role-Auth.git",
+         "web" : "https://github.com/vague666/Mojo-URL-Role-Auth"
+      }
+   },
+   "version" : "0.1.0",
    "x_serialization_backend" : "JSON::PP version 4.16",
    "x_static_install" : 1
 }
