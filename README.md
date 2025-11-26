@@ -1,23 +1,33 @@
+#NAME
 
-# NAME
+    Mojo::URL::Role::Auth - Use 2-arg function to add userinfo to url
 
-Mojo::URL::Role::Auth - It's new $module
+#SYNOPSIS
 
-# SYNOPSIS
+        my $url = Mojo::URL->new('https://example.com')->with_roles('+Auth');
+        $url->auth('u53rn4m3', 'p455w0rd');
+        say $url->to_unsafe_string; # gives https://u53rn4m3:p455w0rd@example.com
 
-    use Mojo::URL::Role::Auth;
+#DESCRIPTION
 
-# DESCRIPTION
+    This role adds a new method that takes two arguments to set userinfo
+    for a url
 
-Mojo::URL::Role::Auth is ...
+#METHODS
 
-# LICENSE
+##auth
 
-Copyright (C) vague666.
+        my $url = Mojo::URL->new->with_roles('+Auth');
+        $url->auth('u53rn4m3', 'p455w0rd');
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+#LICENSE
 
-# AUTHOR
+    Copyright (C) Jari Matilainen.
 
-vague666 <>
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
+#AUTHOR
+
+    vague <vague@cpan.org>
+
