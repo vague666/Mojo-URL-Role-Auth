@@ -42,7 +42,8 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008001"
+            "Mojolicious" : "9.11",
+            "perl" : "5.026000"
          }
       },
       "test" : {
